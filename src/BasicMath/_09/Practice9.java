@@ -1,6 +1,6 @@
 package BasicMath._09;
 
-public class Practic9 {
+public class Practice9 {
     final static int mod = (int) 1e9 + 7;
 
     public static int solution(long n) {
