@@ -2,7 +2,7 @@ package BasicMath._09;
 
 import java.util.Arrays;
 
-public class Pratice2 {
+public class Practice2 {
     public static void solution(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
