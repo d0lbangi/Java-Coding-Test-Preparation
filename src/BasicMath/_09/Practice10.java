@@ -10,7 +10,7 @@ public class Practice10 {
         System.out.println(sb);
     }
 
-    public static void hanoi(int n, int start, int mid, int to) {
+    public static void hanoi(int n, int start, int               mid, int to) {
         if (n == 1) {
             sb.append(start + " " + to + "\n");
             return;
