@@ -1,9 +1,9 @@
-package LinearDataStructure.Array.LinkedList;
+package LinearDataStructure.LinkedList.LinkedList;
 
 // 단순 연결 리스트 구현 완성
 
-class LinkedList2 extends LinkedList {
-    LinkedList2(Node node) {
+class LinkedList2 extends LinearDataStructure.LinkedList.LinkedListExamples.LinkedList {
+    LinkedList2(LinearDataStructure.LinkedList.LinkedListExamples.Node node) {
         this.head = node;
     }
 
@@ -12,22 +12,22 @@ class LinkedList2 extends LinkedList {
     // before_data 에 값이 있는 경우, 해당 값을 가진 노드 앞에 추가
     public void addData(int data, Integer beforeData) {
         if (this.head == null) {
-            this.head = new Node(data, null);
+            this.head = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, null);
         } else if (beforeData == null) {
-            Node cur = this.head;
+            LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
             while (cur.next != null) {
                 cur = cur.next;
             }
-            cur.next = new Node(data, null);
+            cur.next = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, null);
         } else {
-            Node cur = this.head;
-            Node pre = cur;
+            LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
+            LinearDataStructure.LinkedList.LinkedListExamples.Node pre = cur;
             while (cur != null) {
                 if (cur.data == beforeData) {
                     if (cur == this.head) {
-                        this.head = new Node(data, this.head);
+                        this.head = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, this.head);
                     } else {
-                        pre.next = new Node(data, cur);
+                        pre.next = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, cur);
                     }
                     break;
                 }
@@ -44,8 +44,8 @@ class LinkedList2 extends LinkedList {
             return;
         }
 
-        Node cur = this.head;
-        Node pre = cur;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node pre = cur;
         while (cur != null) {
             if (cur.data == data) {
                 if (cur == this.head) {
@@ -66,7 +66,7 @@ public class Practice1 {
     public static void main(String[] args) {
 
         // Test code
-        LinkedList2 myList = new LinkedList2(new Node(1, null));
+        LinkedList2 myList = new LinkedList2(new LinearDataStructure.LinkedList.LinkedListExamples.Node(1, null));
         myList.showData();
 
         myList.addData(2);

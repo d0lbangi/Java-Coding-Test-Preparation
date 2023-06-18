@@ -1,25 +1,25 @@
-package LinearDataStructure.Array.LinkedList;
+package LinearDataStructure.LinkedList.LinkedList;
 
 // 선형 자료구조 - 연결 리스트
-// 단순 연결 리스트 - (simple ver.) 기본ㄱ ㅜ조 구현
+// 단순 연결 리스트 - (simple ver.) 기본구조 구현
 
 // 노드
 class Node {
     int data;
-    Node next;
+    LinearDataStructure.LinkedList.LinkedListExamples.Node next;
 
     Node() {}
-    Node(int data, Node next) {
+    Node(int data, LinearDataStructure.LinkedList.LinkedListExamples.Node next) {
         this.data = data;
         this.next = next;
     }
 }
 
 class LinkedList {
-    Node head;
+    LinearDataStructure.LinkedList.LinkedListExamples.Node head;
 
     LinkedList() {}
-    LinkedList(Node node) {
+    LinkedList(LinearDataStructure.LinkedList.LinkedListExamples.Node node) {
         this.head = node;
     }
 
@@ -35,13 +35,13 @@ class LinkedList {
     // 연결 리스트의 맨 뒤에 데이터 추가
     public void addData(int data) {
         if(this.head == null) {
-            this.head = new Node(data, null);
+            this.head = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, null);
         } else {
-            Node cur = this.head;
+            LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
             while (cur.next != null) {
                 cur = cur.next;
             }
-            cur.next = new Node(data, null);
+            cur.next = new LinearDataStructure.LinkedList.LinkedListExamples.Node(data, null);
         }
     }
 
@@ -51,8 +51,8 @@ class LinkedList {
             System.out.println("List is empty");
             return;
         }
-        Node cur = this.head;
-        Node prev = cur;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node prev = cur;
 
         while (cur.next != null) {
             prev = cur;
@@ -72,7 +72,7 @@ class LinkedList {
             return;
         }
 
-        Node cur = this.head;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
         while (cur != null) {
             if (cur.data == data) {
                 System.out.println("Data exist!");
@@ -90,7 +90,7 @@ class LinkedList {
             return;
         }
 
-        Node cur = this.head;
+        LinearDataStructure.LinkedList.LinkedListExamples.Node cur = this.head;
         while (cur != null) {
             System.out.println(cur.data + " ");
             cur =cur.next;
@@ -104,7 +104,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Test code
-        LinkedList myList = new LinkedList(new Node(1, null));
+        LinearDataStructure.LinkedList.LinkedListExamples.LinkedList myList = new LinearDataStructure.LinkedList.LinkedListExamples.LinkedList(new LinearDataStructure.LinkedList.LinkedListExamples.Node(1, null));
         myList.showData();
 
         myList.addData(2);

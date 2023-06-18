@@ -1,4 +1,4 @@
-package LinearDataStructure.Array.LinkedList;
+package LinearDataStructure.LinkedList.LinkedList;
 
 // 원형 연결 리스트 (Circular Linked List) 구현
 // 실행 안됨

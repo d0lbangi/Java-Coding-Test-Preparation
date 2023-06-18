@@ -1,4 +1,4 @@
-package LinearDataStructure.Array.LinkedList;
+package LinearDataStructure.LinkedList.LinkedList;
 
 // 양방향 연결 리스트 (Doubly Linked List) 구현
 
@@ -14,7 +14,7 @@ class NodeBi {
     }
 }
 
-class DoublyLinkedList extends LinkedList {
+class DoublyLinkedList extends LinearDataStructure.LinkedList.LinkedListExamples.LinkedList {
         NodeBi head;
         NodeBi tail;
 
