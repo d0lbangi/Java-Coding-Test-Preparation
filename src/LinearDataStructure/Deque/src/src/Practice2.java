@@ -1,12 +1,12 @@
 // Practice2
 // 배열을 이용한 기본 데크 직접 구현
 
-class MyDeque2 {
+class MyDeque3 {
     int[] arr;
     int front = 0;
     int rear = 0;
 
-    MyDeque2(int size) {
+    MyDeque3(int size) {
         this.arr = new int[size + 1]; // 원형으로 만들기 위해 front가 가르키는 걸 만들기 위해 +1을 하였음
     }
 
@@ -74,7 +74,7 @@ public class Practice2 {
 
     public static void main(String[] args) {
         // Test code
-        MyDeque2 myDeque = new MyDeque2(5);
+        MyDeque3 myDeque = new MyDeque3(5);
 
         // Front 부분 입력
         myDeque.addFirst(1);
