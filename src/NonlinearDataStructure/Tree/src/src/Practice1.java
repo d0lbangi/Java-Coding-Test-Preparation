@@ -59,7 +59,7 @@ class BinaryTree {
     }
 }
 
-public class Main {
+public class Practice1 {
     public static void main(String[] args) {
         // Test code
         char[] arr = new char[10];
