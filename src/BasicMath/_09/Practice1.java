@@ -25,7 +25,7 @@ public class Practice1 {
     }
 
     public static void main(String[] args) {
-        // Test code
+        // TestCode
         System.out.println(solution(1));
         System.out.println(solution(2));
         System.out.println(solution(3));
